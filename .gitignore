@@ -1,0 +1,14 @@
+model.json
+model.h5
+_test.csv
+_train.csv
+_validate.csv
+__pycache__
+ecml_pkdd/ecml_pkdd_learning_dataset.xml
+CSIC2010/csic_2010_dataset_cisc_train_test.tar
+.*
+.ipynb_checkpoints
+ecml_pkdd/.ipynb_checkpoints
+CSIC2010/.ipynb_checkpoints
+Morzeux_HttpParamsDataset/.ipynb_checkpoints
+!/.gitignore
