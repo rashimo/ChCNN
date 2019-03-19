@@ -1,6 +1,6 @@
 # ChCNN
 A convolutional neural network approach to classify web requests. 
-In [Character-level Convolutional Networks for Text Classification (NIPS 2015)](http://arxiv.org/abs/1509.01626)  Xiang Zhang, Junbo Zhao and Yann LeCun showed that Character-level CNN's can be used for text classifications. Since HTTP is a text-based protocol, why not use  this approach to identify malicious requests? 
+In [Character-level Convolutional Networks for Text Classification (NIPS 2015)](http://arxiv.org/abs/1509.01626)  Xiang Zhang, Junbo Zhao and Yann LeCun showed that Character-level CNN's can be used for text classifications. Since HTTP is a text-based protocol and single characters play a significant role in malicious payloads, why not use  this approach to identify malicious requests? 
 
 
 ## Requirements
