@@ -27,7 +27,7 @@ ECML/PKDD 2007 and CSIC 2010 Datasets contain whole requests. HttpParamsDataset 
 
 ## Results
 
-Data is split into train, validate and test. Results below are for test samples after training and validating on train and validation samples. Cross-validation is in consideration. The performance could be affected since the model will not receive large batches of all classes.
+Data is split into train, validate and test. Results below are for test samples after training and validating on train and validation samples. Cross-validation is in consideration. The performance could be affected since the model will not receive large batches of all classes. While training it can happen that loss suddenly starts to increase and explodes (especially for Morzeux_HttpParamsDataset). As far as I tested, lowering the learning rate in the Adam optimizer stabilizes the loss and even better results can be achieved (eg. optimizer=Adam(lr=0.0005) )    
 
 
 **Results for ECML_PKDD after training for 30 Epochs with input_size of 2500 characters**
