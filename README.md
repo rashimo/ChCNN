@@ -89,5 +89,7 @@ https://github.com/faizann24/Fwaf-Machine-Learning-driven-Web-Application-Firewa
 https://www.researchgate.net/publication/329115783_Malicious_Web_Request_Detection_Using_Character-level_CNN
 
 ## Credits
-Credits go to https://github.com/chaitjo/character-level-cnn. Some code was reused. 
+Credits go to:
+* https://github.com/chaitjo/character-level-cnn (some code was reused) 
+* https://gitlab.fing.edu.uy/gsi/web-application-attacks-datasets (for the dataset)
 
