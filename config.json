@@ -11,7 +11,7 @@
   },
   "model": "char_cnn_zhang",
   "training": {
-    "epochs": 10,
+    "epochs": 7,
     "batch_size": 128,
     "evaluate_every": 5,
     "checkpoint_every": 5

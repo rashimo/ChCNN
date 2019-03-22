@@ -6,6 +6,8 @@ _validate.csv
 __pycache__
 ecml_pkdd/ecml_pkdd_learning_dataset.xml
 CSIC2010/csic_2010_dataset_cisc_train_test.tar
+ISCX-URL-2016/ISCXURL2016.zip
+ISCX-URL-2016/FinalDataset/
 .*
 .ipynb_checkpoints
 ecml_pkdd/.ipynb_checkpoints
