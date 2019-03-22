@@ -22,6 +22,7 @@ ECML/PKDD 2007 and CSIC 2010 Datasets contain whole requests. HttpParamsDataset 
   * ECML/PKDD 2007 (8 classes, approx. 2500 characters)
   * CSIC 2010 (2 classes, approx. 1400 characters)
   * HttpParamsDataset (5 classes, approx. 500 characters)
+  * ISCX-URL-2016 (5 classes, approx. 1500 characters)
 4. Run char-cnn
 
 
