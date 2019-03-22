@@ -1,7 +1,6 @@
 # ChCNN
 A convolutional neural network approach to classify web requests. 
-In [Character-level Convolutional Networks for Text Classification (NIPS 2015)](http://arxiv.org/abs/1509.01626)  Xiang Zhang, Junbo Zhao and Yann LeCun showed that Character-level CNN's can be used for text classifications. Since HTTP is a text-based protocol and single characters play a significant role in malicious payloads, why not use  this approach to identify malicious requests? 
-
+In [Character-level Convolutional Networks for Text Classification (NIPS 2015)](http://arxiv.org/abs/1509.01626)  Xiang Zhang, Junbo Zhao and Yann LeCun showed that Character-level CNN's can be used for text classifications. Since HTTP is a text-based protocol and single characters play a significant role in malicious payloads, why not use  this approach to identify malicious requests? Moreover it can ben applied anywhere in a request where is some text.  For example in Morzeux_HttpParamsDataset only payloads are considered and in  ISCX-URL-2016 classification is applied  to URLs. 
 
 ## Requirements
 Tensorflow, Keras, Jupyter Notebook, Pandas, Nvidia GPU and drivers...
@@ -9,11 +8,12 @@ The best approach is to install conda. [A good resource to get started](https://
 
 ## Dataset
 
-ECML/PKDD 2007 and CSIC 2010 Datasets contain whole requests. HttpParamsDataset contains payloads. 
+ECML/PKDD 2007 and CSIC 2010 Datasets contain whole requests. HttpParamsDataset contains payloads. ISCX-URL-2016 contains only URLs. 
 
 * ECML/PKDD 2007 Challenge (downloaded from https://gitlab.fing.edu.uy/gsi/web-application-attacks-datasets)
 * CSIC 2010 Dataset (downloaded from https://gitlab.fing.edu.uy/gsi/web-application-attacks-datasets)
 * HttpParamsDataset (downloaded from https://github.com/Morzeux/HttpParamsDataset)
+* ISCX-URL-2016 (downloaded from https://www.unb.ca/cic/datasets/url-2016.html)
 
 ## Usage
 1. Download datasets to corresponding directory
@@ -84,6 +84,24 @@ Labels:
            3       0.93      0.96      0.95        74
            4       0.44      0.62      0.52        13
 
+**Results for ISCX-URL-2016 after training for 50 Epochs with input_size of 1500 characters**
+
+Labels:
+
+* benign = 0
+* defacement  = 1
+* malware   = 2
+* phishing = 3
+* spam = 4
+
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      7081
+           1       0.99      1.00      1.00     19264
+           2       0.99      0.98      0.99      2282
+           3       0.97      0.94      0.96      2040
+           4       1.00      1.00      1.00      2407
+
 ## Similar work
 https://github.com/faizann24/Fwaf-Machine-Learning-driven-Web-Application-Firewall
 https://www.researchgate.net/publication/329115783_Malicious_Web_Request_Detection_Using_Character-level_CNN
@@ -92,4 +110,6 @@ https://www.researchgate.net/publication/329115783_Malicious_Web_Request_Detecti
 Credits go to:
 * https://github.com/chaitjo/character-level-cnn (some code was reused) 
 * https://gitlab.fing.edu.uy/gsi/web-application-attacks-datasets (for the dataset)
+* https://github.com/Morzeux/HttpParamsDataset (for the dataset)
+* https://www.unb.ca/cic/datasets/url-2016.html (for the dataset)
 
